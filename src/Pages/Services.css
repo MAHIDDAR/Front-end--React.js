@@ -1,0 +1,42 @@
+.services {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url("https://images.unsplash.com/photo-1498837167922-ddd27525d352");
+
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+}
+
+.services-content {
+  max-width: 700px;
+  background: rgba(255,255,255,0.1);
+  padding: 30px;
+  border-radius: 12px;
+  color: white;
+  backdrop-filter: blur(8px);
+}
+
+.services-content h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.services-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services-content li {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.services-content p {
+  margin-top: 20px;
+  line-height: 1.6;
+}

@@ -1,0 +1,52 @@
+.auth {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-bg {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("https://images.unsplash.com/photo-1556742049-0cfed4f6a45d");
+  background-size: cover;
+  background-position: center;
+}
+
+.register-bg {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("https://images.unsplash.com/photo-1495195134817-aeb325a55b65");
+  background-size: cover;
+  background-position: center;
+}
+
+.auth-box {
+  background: rgba(255,255,255,0.1);
+  padding: 30px;
+  border-radius: 12px;
+  color: white;
+  width: 300px;
+  text-align: center;
+  backdrop-filter: blur(8px);
+}
+
+.auth-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+}
+
+.auth-box button {
+  width: 100%;
+  padding: 10px;
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+.error {
+  color: #ff4d4d;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
