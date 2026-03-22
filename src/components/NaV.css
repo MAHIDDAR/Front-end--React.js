@@ -39,3 +39,37 @@
   padding: 3px 6px;
   border-radius: 50%;
 }
+.links {
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  overflow: hidden;
+  max-height: 1000px; 
+  opacity: 1;
+}
+
+
+@media screen and (max-width: 768px) {
+  .links {
+    max-height: 0;
+    opacity: 0;
+  }
+
+  .links.open {
+    max-height: 500px; 
+    opacity: 1;
+  }
+}
+/* Hide hamburger on desktop */
+.hamburger {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none; /* hidden by default */
+}
+
+/* Show hamburger only on mobile */
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+}
