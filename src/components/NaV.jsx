@@ -30,3 +30,4 @@
     </>
   )}
 </div>
+export default NaV;
