@@ -58,18 +58,45 @@
     opacity: 1;
   }
 }
-/* Hide hamburger on desktop */
+
 .hamburger {
   font-size: 1.5rem;
   background: none;
   border: none;
   cursor: pointer;
-  display: none; /* hidden by default */
+  display: none; 
 }
 
-/* Show hamburger only on mobile */
 @media screen and (max-width: 768px) {
   .hamburger {
     display: block;
+  }
+}
+
+.links {
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  overflow: hidden;
+  max-height: 1000px; 
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-height: 0;
+    opacity: 0;
+  }
+
+  .links.open {
+    max-height: 800px; 
+    opacity: 1;
+  }
+
+
+  .auth-btn {
+    width: 100%;
+    text-align: center;
   }
 }
